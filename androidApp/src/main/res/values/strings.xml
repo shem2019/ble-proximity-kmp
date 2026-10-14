@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Proximity</string>
+
+    <string name="smoothing_label">Smoothing</string>
+    <string name="smoothing_kalman">Kalman</string>
+    <string name="smoothing_moving_average">Moving average</string>
+
+    <string name="status_permission_title">Bluetooth access needed</string>
+    <string name="status_permission_body">The app listens for Bluetooth advertisements to estimate how far away nearby devices are. It never uses them to find your location.</string>
+    <string name="status_permission_body_legacy">On this version of Android, scanning for Bluetooth devices needs the location permission. The app uses it only to hear nearby devices, never to find your location.</string>
+    <string name="status_permission_denied">Access was refused. Allow \"Nearby devices\" for this app in Settings.</string>
+    <string name="status_permission_denied_legacy">Access was refused. Allow \"Location\" for this app in Settings.</string>
+    <string name="action_allow">Allow</string>
+    <string name="action_open_settings">Open settings</string>
+
+    <string name="status_bluetooth_off_title">Bluetooth is off</string>
+    <string name="status_bluetooth_off_body">Turn Bluetooth on to start scanning.</string>
+    <string name="action_turn_on">Turn on</string>
+
+    <string name="status_location_off_title">Location is off</string>
+    <string name="status_location_off_body">On Android 11 and lower, Bluetooth scans return nothing while location is off.</string>
+    <string name="action_location_settings">Location settings</string>
+
+    <string name="status_unsupported_title">Bluetooth LE not available</string>
+    <string name="status_unsupported_body">This device has no Bluetooth Low Energy radio.</string>
+
+    <string name="status_failed_title">The scan stopped</string>
+    <string name="status_failed_body">Android refused the scan (%1$s). Try again in a moment.</string>
+    <string name="action_retry">Try again</string>
+
+    <string name="listening">Listening for nearby devices…</string>
+    <plurals name="devices_nearby">
+        <item quantity="one">%1$d device nearby</item>
+        <item quantity="other">%1$d devices nearby</item>
+    </plurals>
+    <string name="unnamed_device">Unnamed device</string>
+
+    <string name="zone_near">Near</string>
+    <string name="zone_mid">Mid</string>
+    <string name="zone_far">Far</string>
+
+    <string name="distance_metres_decimal">%1$.1f m</string>
+    <string name="distance_metres_whole">%1$.0f m</string>
+    <string name="distance_range">Likely between %1$s and %2$s</string>
+    <string name="rssi_detail">%1$d dBm raw · %2$.1f dBm smoothed · %3$s</string>
+    <plurals name="packets_heard">
+        <item quantity="one">%1$d packet</item>
+        <item quantity="other">%1$d packets</item>
+    </plurals>
+    <string name="rssi_short">%1$.0f dBm</string>
+
+    <string name="calibration_default">Uses the default of −59 dBm at 1 m. Hold the device 1 m away and calibrate for a better estimate.</string>
+    <string name="calibrated">Calibrated on this device at 1 m.</string>
+    <string name="action_calibrate">It is 1 m away: calibrate</string>
+    <string name="action_clear_calibration">Clear calibration</string>
+</resources>
